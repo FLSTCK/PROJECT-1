@@ -1,0 +1,319 @@
+/* style.css */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.answer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#result-message {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#score {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#nickname {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.ranking {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#ranking-list {
+    list-style: none;
+    padding: 0;
+}
+
+#ranking-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+#ranking-list li:last-child {
+    border-bottom: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+#nickname-input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #0056b3;
+}
+
+/* 원래 파일에 있던 코드 */
+* {
+    background: #f2f2f2;
+
+}
+
+.answer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="text"] {
+    flex: 1;
+    width: 100%;
+    height: 25px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#score {
+    background-color: grey;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 20%;
+}
+
+#resultMessage {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.popup button {
+    background-color: rgb(44, 128, 34);
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: rgb(29,84,23);
+}
+
+.ranking {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#nickname-display {
+    font-size: 18px;
+    color: #333;
+}
+
+/* 랭킹보드 컨테이너 스타일 */
+.ranking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* 랭킹보드 컨테이너 최소 높이 */
+}
+
+/* 광고 패널 스타일 */
+.ad-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin: 20px auto;
+    width: 80%; /* 광고 패널 가로 너비 */
+    max-width: 1200px; /* 최대 가로 너비 */
+}
+
+/* 나머지 스타일 유지 */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.ad-panel {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+}
+
+.ad-panel.left {
+    order: -1;
+}
+
+.ad-panel.right {
+    order: 1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.ad-panel {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 0 10px;
+    flex: 1;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    order: 1;
+}
+
+header {
+    padding: 10px 20px;
+    color: #fff;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: red;
+    cursor: pointer;
+}

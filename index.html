@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>DAD JOKE PROFEINCY TEST</title>
+</head>
+<body>
+
+    <header>
+        <span id="nickname-display">Nickname: Guest</span>
+    </header>
+
+    <div class="popup" id="popup-container">
+        <div class="popup-content">
+            <h2>Welcome to DAD JOKE PROFEINCY Test!</h2>
+            <p>Please enter your nickname to start playing:</p>
+            <input type="text" id="nickname-input" placeholder="Enter your nickname">
+            <button id="start-button">Confirm</button>
+            <button id="close-button" class="close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <h1>DAD JOKE PROFEINCY TEST!!!</h1>
+
+    <div class="quiz-container">
+        <h2>Question 1</h2>
+        <p>How do you call a man without a body and a nose?</p>
+        <div id="quiz"></div>
+            <div class="answer-box">
+                <input type="text" id="answer" placeholder="Your Answer.."/>
+                <button id="submit">Submit!</button>
+            </div>
+        
+        <p id="result-message"></p>
+        <p id="score">Score:</p>
+    </div>
+
+<div class="container">
+    <div class="ad-panel left">
+        <!-- 왼쪽 광고 내용 -->
+        Ad Content Left
+    </div>
+
+    <div class="ranking">
+        <h1>Ranking Board</h1>
+        <ol id="ranking-list">
+            <!-- 랭킹 정보가 여기에 들어갈 것입니다. -->
+        </ol>
+        <div class="confetti"></div>
+    </div>    
+
+    <div class="ad-panel right">
+        <!-- 오른쪽 광고 내용 -->
+        Ad Content Right
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script src="script.js"></script>
+<script src="client.js"></script>
+
+</body>
+</html>
